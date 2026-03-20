@@ -25,30 +25,29 @@
 timeline
     title DecentralChain Ecosystem Roadmap
     section Phase 1 — SDK & Monorepo
-        Feb-Mar 2026 : Fork 24 Waves packages
-                     : Rebrand to @decentralchain
-                     : Monorepo consolidation (Nx + pnpm)
-                     : 3,747 tests passing, 0 vulnerabilities
-    section Phase 2 — Wallet & DeFi
+        Feb-Mar 2026 : Fork 24 Waves packages ✅
+                     : Rebrand to @decentralchain ✅
+                     : Monorepo consolidation (Nx + pnpm) ✅
+                     : 3,747 tests passing, 0 vulnerabilities ✅
+    section Phase 2 — DeFi & Apps (90% Complete)
+        Mar-Apr 2026 : AMM Swap — mainnet, testing/debug needed
+                     : Staking — mainnet, testing/debug needed
+                     : Liquidity Locker — mainnet, testing/debug needed
+                     : Sol Gateway (ZK) — mainnet, testing/debug needed
+    section Phase 3 — CR Coin Economy (90% Complete)
+        Mar-Apr 2026 : CR Coin Website, Quests, Raffles — testing/debug
+                     : CRC Marketplace, Casino 2.0 — testing/debug
+                     : Airdrop Bot, Data Writer — testing/debug
+    section Phase 4 — Wallets & QA
         Q2 2026 : DCW Mobile Wallets (Android + iOS)
                 : DCW Browser Extension
-                : DCC AMM Swap launch
-                : Staking platform
-    section Phase 3 — Cross-Chain & Apps
-        Q3 2026 : Sol-to-DCC Gateway (ZK proofs)
-                : Liquidity Locker
+                : Full QA pass on all 12 mainnet apps
+                : Security audit across DeFi + CR Coin
+    section Phase 5 — Ecosystem Growth
+        Q3 2026 : Decentral Exchange production
                 : DecentralScan v2
                 : RWA tokenization platform
-    section Phase 4 — CR Coin Economy
-        Q3-Q4 2026 : CR Coin Quests & Raffles
-                   : CRC Marketplace
-                   : CRC Casino 2.0
-                   : Airdrop campaigns
-    section Phase 5 — Ecosystem Growth
-        Q1 2027 : Decentral Exchange production
-                : Docs portal relaunch
-                : Partner integrations
-                : Node infrastructure scaling
+                : Docs relaunch, partner integrations
 ```
 
 ---
@@ -125,40 +124,40 @@ gantt
     Replace @keeper-wallet/waves-crypto    :crit, a9, 2026-03-19, 21d
     SDK Phase 1 Complete                   :milestone, m1, 2026-04-15, 0d
 
-    section Phase 2 — Wallet & DeFi
-    DCW Android Development                :b1, 2026-04-01, 60d
-    DCW iOS Development                    :b2, 2026-04-01, 60d
-    DCW Browser Extension                  :b3, 2026-04-01, 45d
-    DCC AMM Swap                           :b4, 2026-04-15, 45d
-    DCC Staking Platform                   :b5, 2026-04-15, 35d
+    section Phase 2 — DeFi Testing & Debug (90% Built)
+    AMM Swap — Testing & Debug             :active, b1, 2026-03-19, 28d
+    Staking — Testing & Debug              :active, b2, 2026-03-19, 28d
+    Liquidity Locker — Testing & Debug     :active, b3, 2026-03-19, 28d
+    Sol Gateway (ZK) — Testing & Debug     :active, b4, 2026-03-19, 35d
+    Data Writer — Testing & Debug          :active, b5, 2026-03-19, 21d
     DCC Website Redesign                   :b6, 2026-04-01, 30d
-    Wallet Beta Release                    :milestone, m2, 2026-06-01, 0d
-    DeFi Suite Live                        :milestone, m3, 2026-06-15, 0d
+    DeFi QA Complete                       :milestone, m2, 2026-04-20, 0d
 
-    section Phase 3 — Cross-Chain & Infrastructure
-    Sol-to-DCC Gateway (ZK Proofs)         :c1, 2026-06-15, 60d
-    Liquidity Locker                       :c2, 2026-06-15, 35d
-    DecentralScan v2                       :c3, 2026-07-01, 45d
-    RWA Tokenization Platform              :c4, 2026-07-01, 60d
-    Data Writer App                        :c5, 2026-07-15, 30d
-    Exchange Security Hardening            :c6, 2026-06-15, 30d
-    Cross-Chain Live                       :milestone, m4, 2026-08-15, 0d
+    section Phase 3 — CR Coin Testing & Debug (90% Built)
+    CR Coin Website — Testing & Debug      :active, c1, 2026-03-19, 21d
+    CR Coin Quests — Testing & Debug       :active, c2, 2026-03-19, 28d
+    CR Coin Raffles — Testing & Debug      :active, c3, 2026-03-19, 28d
+    CRC Marketplace — Testing & Debug      :active, c4, 2026-03-19, 35d
+    CRC Casino 2.0 — Testing & Debug       :active, c5, 2026-03-19, 35d
+    DCC Airdrop Bot — Testing & Debug      :active, c6, 2026-03-19, 21d
+    CR Coin QA Complete                    :milestone, m3, 2026-04-25, 0d
 
-    section Phase 4 — CR Coin Economy
-    CR Coin Website Relaunch               :d1, 2026-08-01, 21d
-    CR Coin Quests App                     :d2, 2026-08-15, 35d
-    CR Coin Raffles App                    :d3, 2026-08-15, 35d
-    CRC Marketplace                        :d4, 2026-09-01, 45d
-    CRC Casino 2.0                         :d5, 2026-09-01, 45d
-    DCC Airdrop Bot Campaigns              :d6, 2026-09-15, 21d
-    CR Coin Economy Live                   :milestone, m5, 2026-10-15, 0d
+    section Phase 4 — Wallets & Security
+    DCW Android Development                :d1, 2026-04-01, 60d
+    DCW iOS Development                    :d2, 2026-04-01, 60d
+    DCW Browser Extension                  :d3, 2026-04-01, 45d
+    Security Audit (DeFi + CR Coin)        :d4, 2026-04-20, 21d
+    Exchange Security Hardening            :d5, 2026-04-20, 30d
+    Wallet Beta Release                    :milestone, m4, 2026-06-01, 0d
 
     section Phase 5 — Ecosystem Growth
-    Decentral Exchange Production          :e1, 2026-10-15, 45d
-    Docs Portal Relaunch                   :e2, 2026-10-15, 30d
-    Node Infrastructure Scaling            :e3, 2026-11-01, 35d
-    Partner & Exchange Integrations        :e4, 2026-11-15, 45d
-    Ecosystem v1.0 Complete                :milestone, m6, 2027-01-01, 0d
+    Decentral Exchange Production          :e1, 2026-06-15, 45d
+    DecentralScan v2                       :e2, 2026-06-15, 45d
+    RWA Tokenization Platform              :e3, 2026-07-01, 60d
+    Docs Portal Relaunch                   :e4, 2026-06-15, 30d
+    Node Infrastructure Scaling            :e5, 2026-07-01, 35d
+    Partner & Exchange Integrations        :e6, 2026-07-15, 45d
+    Ecosystem v1.0 Complete                :milestone, m5, 2026-09-01, 0d
 ```
 
 ---
@@ -176,7 +175,23 @@ gantt
     Cognito Migration (P0)       :crit, s2, 2026-03-19, 14d
     waves-crypto Replacement     :s3, 2026-03-19, 21d
     SDK CI/CD in Nx              :s4, 2026-04-01, 14d
-    Exchange Sec Hardening       :s5, 2026-06-15, 30d
+    Exchange Sec Hardening       :s5, 2026-04-20, 30d
+
+    section DeFi QA (90% Built — on Mainnet)
+    AMM Swap Testing             :active, df1, 2026-03-19, 28d
+    Staking Testing              :active, df2, 2026-03-19, 28d
+    Liquidity Locker Testing     :active, df3, 2026-03-19, 28d
+    Sol Gateway Testing          :active, df4, 2026-03-19, 35d
+    Data Writer Testing          :active, df5, 2026-03-19, 21d
+    DeFi Security Audit          :df6, 2026-04-20, 21d
+
+    section CR Coin QA (90% Built — on Mainnet)
+    CR Coin Website QA           :active, cr1, 2026-03-19, 21d
+    Quests App QA                :active, cr2, 2026-03-19, 28d
+    Raffles App QA               :active, cr3, 2026-03-19, 28d
+    Marketplace QA               :active, cr4, 2026-03-19, 35d
+    Casino 2.0 QA                :active, cr5, 2026-03-19, 35d
+    Airdrop Bot QA               :active, cr6, 2026-03-19, 21d
 
     section Mobile & Extension
     DCW Android                  :w1, 2026-04-01, 60d
@@ -184,26 +199,11 @@ gantt
     DCW Extension                :w3, 2026-04-01, 45d
     Wallet Security Audit        :w4, 2026-05-15, 14d
 
-    section DeFi & Cross-Chain
-    AMM Swap Smart Contracts     :df1, 2026-04-15, 30d
-    Swap Frontend                :df2, 2026-05-15, 21d
-    Staking Contracts & UI       :df3, 2026-04-15, 35d
-    Liquidity Locker             :df4, 2026-06-15, 35d
-    Sol Gateway ZK Circuits      :df5, 2026-06-15, 45d
-    Sol Gateway Bridge UI        :df6, 2026-08-01, 21d
-
     section Web & Explorer
     decentralchain.io Redesign   :wb1, 2026-04-01, 30d
-    DecentralScan v2             :wb2, 2026-07-01, 45d
-    docs.decentralchain.io       :wb3, 2026-10-15, 30d
-    decentral.exchange Prod      :wb4, 2026-10-15, 45d
-
-    section CR Coin Apps
-    crcoin.net Relaunch          :cr1, 2026-08-01, 21d
-    Quests App                   :cr2, 2026-08-15, 35d
-    Raffles App                  :cr3, 2026-08-15, 35d
-    Marketplace                  :cr4, 2026-09-01, 45d
-    Casino 2.0                   :cr5, 2026-09-01, 45d
+    DecentralScan v2             :wb2, 2026-06-15, 45d
+    docs.decentralchain.io       :wb3, 2026-06-15, 30d
+    decentral.exchange Prod      :wb4, 2026-06-15, 45d
 ```
 
 ---
@@ -219,29 +219,39 @@ flowchart LR
     C --> E["DCW Wallets<br/>(Android, iOS, Extension)"]
     D --> E
 
-    B --> F["DCC AMM Swap"]
-    B --> G["DCC Staking"]
-    F --> H["Decentral Exchange"]
-    G --> H
+    B --> F["DCC AMM Swap<br/>🟡 90% — QA needed"]
+    B --> G["DCC Staking<br/>🟡 90% — QA needed"]
+    B --> H["Liquidity Locker<br/>🟡 90% — QA needed"]
+    B --> I["Sol Gateway ZK<br/>🟡 90% — QA needed"]
+    B --> J["Data Writer<br/>🟡 90% — QA needed"]
 
-    E --> I["Sol-to-DCC Gateway<br/>(ZK Proofs)"]
-    F --> I
-    B --> J["Liquidity Locker"]
-    B --> K["RWA Platform"]
+    B --> K["CR Coin Website<br/>🟡 90% — QA needed"]
+    B --> L["CR Coin Quests<br/>🟡 90% — QA needed"]
+    B --> M["CR Coin Raffles<br/>🟡 90% — QA needed"]
+    B --> N["CRC Marketplace<br/>🟡 90% — QA needed"]
+    B --> O["CRC Casino 2.0<br/>🟡 90% — QA needed"]
+    B --> P["Airdrop Bot<br/>🟡 90% — QA needed"]
 
-    E --> L["CR Coin Quests"]
-    E --> M["CR Coin Raffles"]
-    L --> N["CRC Marketplace"]
-    M --> N
-    N --> O["CRC Casino 2.0"]
+    F --> Q["Security Audit<br/>(DeFi + CR Coin)"]
+    G --> Q
+    H --> Q
+    L --> Q
+    N --> Q
+    O --> Q
 
-    I --> P["Ecosystem v1.0"]
-    H --> P
-    O --> P
-    K --> P
+    Q --> R["Decentral Exchange"]
+    F --> R
+    G --> R
 
-    B --> Q["DecentralScan v2"]
-    Q --> P
+    E --> S["Ecosystem v1.0"]
+    R --> S
+    Q --> S
+    I --> S
+
+    B --> T["DecentralScan v2"]
+    T --> S
+    B --> U["RWA Platform"]
+    U --> S
 ```
 
 ---
@@ -277,10 +287,10 @@ quadrantChart
 |-------|--------|--------|-----------------|
 | **Phase 1** — SDK & Monorepo | 🟢 Complete | Mar 2026 | 22 SDK libs migrated, monorepo consolidated, 3,747 tests, 0 vulns |
 | **Phase 1b** — Critical Fixes | 🔴 Blocked | Apr 2026 | Cognito P0 resolution, @keeper-wallet/waves-crypto removal |
-| **Phase 2** — Wallet & DeFi | 🟡 In Progress | Q2 2026 | DCW Android/iOS/Extension, AMM Swap, Staking, decentralchain.io |
-| **Phase 3** — Cross-Chain & Infra | ⚪ Not Started | Q3 2026 | Sol Gateway (ZK), Liquidity Locker, DecentralScan v2, RWA, Data Writer |
-| **Phase 4** — CR Coin Economy | ⚪ Not Started | Q3-Q4 2026 | Quests, Raffles, Marketplace, Casino 2.0, Airdrop campaigns |
-| **Phase 5** — Ecosystem Growth | ⚪ Not Started | Q1 2027 | decentral.exchange prod, docs relaunch, partner integrations |
+| **Phase 2** — DeFi Testing & Debug | 🟡 In Progress (90%) | Apr 2026 | AMM Swap, Staking, Liquidity Locker, Sol Gateway, Data Writer — all on mainnet, QA needed |
+| **Phase 3** — CR Coin Testing & Debug | 🟡 In Progress (90%) | Apr 2026 | CR Coin Website, Quests, Raffles, Marketplace, Casino 2.0, Airdrop Bot — all on mainnet, QA needed |
+| **Phase 4** — Wallets & Security | 🟡 In Progress | Q2 2026 | DCW Android/iOS/Extension, security audit on all DeFi + CR Coin apps |
+| **Phase 5** — Ecosystem Growth | ⚪ Not Started | Q3 2026 | decentral.exchange prod, DecentralScan v2, RWA, docs relaunch, partner integrations |
 
 ---
 
@@ -317,22 +327,86 @@ pie title Phase 1 Effort Distribution
 
 ---
 
-### Phase 2 — Wallet & DeFi (Q2 2026)
+### Phase 2 — DeFi Testing & Debug (Mar–Apr 2026) — 90% COMPLETE
+
+> All 5 DeFi projects are fully structured and running on mainnet. Remaining work is comprehensive testing, bug fixes, and hardening before public launch.
 
 ```mermaid
 pie title Phase 2 Effort Distribution
+    "Testing & Bug Fixes" : 45
+    "Security Hardening" : 25
+    "Performance Optimization" : 15
+    "Documentation" : 15
+```
+
+**Current State:** All running on mainnet, 90% complete.
+
+| Project | Repository | Mainnet | Remaining Work |
+|---------|-----------|:-------:|----------------|
+| DCC AMM Swap | `dylanpersonguy/dcc-amm-swap` | ✅ | Testing, edge-case debugging |
+| DCC Staking | `dylanpersonguy/dcc-staking` | ✅ | Testing, edge-case debugging |
+| Liquidity Locker | `dylanpersonguy/dcc-liquidity-locker` | ✅ | Testing, edge-case debugging |
+| Sol-to-DCC Gateway | `dylanpersonguy/sol-gateway-dcc-zk-proof` | ✅ | Testing, ZK proof verification |
+| Data Writer App | `dylanpersonguy/decentralchain-data-writer-app` | ✅ | Testing, edge-case debugging |
+
+**Goals:**
+- Comprehensive test suites for all 5 DeFi projects (unit, integration, mainnet e2e)
+- Edge-case debugging: zero amounts, max values, concurrent transactions, network failures
+- Security review of smart contract interactions and transaction signing flows
+- Performance testing under load for AMM Swap and Staking
+- ZK proof verification and bridge reliability for Sol Gateway
+
+---
+
+### Phase 3 — CR Coin Testing & Debug (Mar–Apr 2026) — 90% COMPLETE
+
+> All 6 CR Coin economy projects are fully structured and running on mainnet. Remaining work is comprehensive testing, bug fixes, and UX polish before public launch.
+
+```mermaid
+pie title Phase 3 Effort Distribution
+    "Testing & Bug Fixes" : 40
+    "UX Polish" : 20
+    "Security Review" : 20
+    "Documentation" : 10
+    "Airdrop Campaign Prep" : 10
+```
+
+**Current State:** All running on mainnet, 90% complete.
+
+| Project | Repository | Mainnet | Remaining Work |
+|---------|-----------|:-------:|----------------|
+| CR Coin Website | `dylanpersonguy/cr-coin-website` | ✅ | Testing, content finalization |
+| CR Coin Quests | `dylanpersonguy/cr-coin-quests-app` | ✅ | Testing, quest logic debugging |
+| CR Coin Raffles | `dylanpersonguy/cr-coin-raffles-app` | ✅ | Testing, draw mechanism verification |
+| CRC Marketplace | `dylanpersonguy/crc-marketplace-app` | ✅ | Testing, transaction flow debugging |
+| CRC Casino 2.0 | `dylanpersonguy/crc-casino-2.0` | ✅ | Testing, provably fair verification |
+| DCC Airdrop Bot | `dylanpersonguy/dcc-airdrop` | ✅ | Testing, distribution logic debugging |
+
+**Goals:**
+- Comprehensive test suites for all 6 CR Coin projects
+- Verify on-chain raffle draw fairness and quest reward distribution
+- Security review of marketplace transaction flows and casino game logic
+- UX testing across all CR Coin apps for consistent user experience
+- Prepare airdrop bot for community launch campaigns
+
+---
+
+### Phase 4 — Wallets & Security Audit (Q2 2026)
+
+```mermaid
+pie title Phase 4 Effort Distribution
     "DCW Mobile Wallets" : 35
     "DCW Browser Extension" : 15
-    "DCC AMM Swap" : 20
-    "DCC Staking" : 15
-    "Website Redesign" : 15
+    "Security Audit (DeFi + CR Coin)" : 25
+    "Exchange Hardening" : 15
+    "Website Redesign" : 10
 ```
 
 **Goals:**
 - Launch DCW (DecentralChain Wallet) on Android and iOS with seed management, transaction signing, and DCC token support
-- Ship DCW browser extension (evolution of Cubensis Connect with full modernization — webpack → Vite, Babel → native TS)
-- Deploy DCC AMM Swap with constant product formula (on-chain Ride smart contracts)
-- Launch DCC Staking platform with LPoS delegation and reward distribution UI
+- Ship DCW browser extension (evolution of Cubensis Connect — webpack → Vite, Babel → native TS)
+- Run security audit across all 12 mainnet apps (DeFi + CR Coin) before public launch announcements
+- Harden decentral.exchange: fix CORS wildcard, add CSP headers, non-root Docker, IP spoofing fix
 - Redesign decentralchain.io with ecosystem overview, wallet downloads, and developer onboarding
 
 **Key Repositories:**
@@ -341,38 +415,7 @@ pie title Phase 2 Effort Distribution
 | DCW Android | `33imattei33/DCW-Android` | Jun 2026 |
 | DCW iOS | `33imattei33/DCW-iOS` | Jun 2026 |
 | DCW Extension | `33imattei33/DCW-Extension` | May 2026 |
-| DCC AMM Swap | `dylanpersonguy/dcc-amm-swap` | Jun 2026 |
-| DCC Staking | `dylanpersonguy/dcc-staking` | May 2026 |
 | DCC Website | `dylanpersonguy/dcc-website` | May 2026 |
-
----
-
-### Phase 3 — Cross-Chain & Infrastructure (Q3 2026)
-
-```mermaid
-pie title Phase 3 Effort Distribution
-    "Sol-to-DCC Gateway (ZK)" : 30
-    "DecentralScan v2" : 20
-    "RWA Tokenization" : 20
-    "Liquidity Locker" : 15
-    "Exchange Hardening" : 15
-```
-
-**Goals:**
-- Build Sol-to-DCC bridge using zero-knowledge proofs for trustless cross-chain asset transfers (Solana ↔ DCC)
-- Deploy Liquidity Locker for DeFi project token vesting and LP lock mechanisms
-- Launch DecentralScan v2 (decentralscan.com) with improved block explorer, transaction detail, and analytics
-- Build RWA (Real World Asset) tokenization platform on DCC — property, carbon credits, securities
-- Harden decentral.exchange: fix CORS wildcard, add CSP headers, non-root Docker, IP spoofing fix
-- Ship Data Writer App for on-chain data transactions
-
-**Key Repositories:**
-| Project | Repository | Target |
-|---------|-----------|--------|
-| Sol-to-DCC Gateway | `dylanpersonguy/sol-gateway-dcc-zk-proof` | Aug 2026 |
-| Liquidity Locker | `dylanpersonguy/dcc-liquidity-locker` | Jul 2026 |
-| RWA Platform | `33imattei33/decentralchain-rwa` | Sep 2026 |
-| Data Writer App | `dylanpersonguy/decentralchain-data-writer-app` | Aug 2026 |
 
 **Security Hardening for decentral.exchange:**
 
@@ -386,51 +429,23 @@ pie title Phase 3 Effort Distribution
 
 ---
 
-### Phase 4 — CR Coin Social Economy (Q3–Q4 2026)
-
-```mermaid
-pie title Phase 4 Effort Distribution
-    "CRC Marketplace" : 25
-    "CRC Casino 2.0" : 25
-    "CR Coin Quests" : 15
-    "CR Coin Raffles" : 15
-    "Airdrop Campaigns" : 10
-    "CR Coin Website" : 10
-```
-
-**Goals:**
-- Relaunch crcoin.net with updated branding, wallet integration, and ecosystem links
-- Ship CR Coin Quests app — gamified tasks that reward users with CR Coin (social currency for Costa Rica)
-- Launch CR Coin Raffles app — on-chain raffle system with transparent draws via Ride smart contracts
-- Build CRC Marketplace for peer-to-peer trading of DCC-based tokens and NFTs
-- Deploy CRC Casino 2.0 with provably fair gaming on DCC blockchain
-- Run DCC Airdrop Bot campaigns for community growth and token distribution
-
-**Key Repositories:**
-| Project | Repository | Target |
-|---------|-----------|--------|
-| CR Coin Website | `dylanpersonguy/cr-coin-website` | Aug 2026 |
-| CR Coin Quests | `dylanpersonguy/cr-coin-quests-app` | Sep 2026 |
-| CR Coin Raffles | `dylanpersonguy/cr-coin-raffles-app` | Sep 2026 |
-| CRC Marketplace | `dylanpersonguy/crc-marketplace-app` | Oct 2026 |
-| CRC Casino 2.0 | `dylanpersonguy/crc-casino-2.0` | Oct 2026 |
-| DCC Airdrop Bot | `dylanpersonguy/dcc-airdrop` | Oct 2026 |
-
----
-
-### Phase 5 — Ecosystem Growth (Q1 2027)
+### Phase 5 — Ecosystem Growth (Q3 2026)
 
 ```mermaid
 pie title Phase 5 Effort Distribution
-    "Decentral Exchange Prod" : 25
-    "Node Infrastructure" : 20
-    "Partner Integrations" : 20
-    "Docs Portal" : 15
-    "Marketing & Community" : 20
+    "Decentral Exchange Prod" : 20
+    "DecentralScan v2" : 15
+    "RWA Tokenization" : 15
+    "Node Infrastructure" : 15
+    "Partner Integrations" : 15
+    "Docs Portal" : 10
+    "Marketing & Community" : 10
 ```
 
 **Goals:**
 - Launch decentral.exchange in production with full security hardening, order matching, and DCC/token trading pairs
+- Ship DecentralScan v2 with improved block explorer, analytics, and transaction detail
+- Launch RWA (Real World Asset) tokenization platform on DCC
 - Relaunch docs.decentralchain.io with SDK reference, Ride tutorials, API docs, and developer guides
 - Scale node infrastructure — additional mainnet/testnet/stagenet nodes, monitoring, and alerting
 - Partner integrations — CEX listings, cross-chain bridges, DeFi protocol partnerships
@@ -462,22 +477,22 @@ pie title Phase 5 Effort Distribution
 
 | Project | Repository | Status |
 |---------|-----------|--------|
-| DCC AMM Swap | `dylanpersonguy/dcc-amm-swap` | In development |
-| DCC Staking | `dylanpersonguy/dcc-staking` | In development |
-| Liquidity Locker | `dylanpersonguy/dcc-liquidity-locker` | In development |
-| Sol-to-DCC Gateway | `dylanpersonguy/sol-gateway-dcc-zk-proof` | In development |
+| DCC AMM Swap | `dylanpersonguy/dcc-amm-swap` | 90% — Mainnet, QA needed |
+| DCC Staking | `dylanpersonguy/dcc-staking` | 90% — Mainnet, QA needed |
+| Liquidity Locker | `dylanpersonguy/dcc-liquidity-locker` | 90% — Mainnet, QA needed |
+| Sol-to-DCC Gateway | `dylanpersonguy/sol-gateway-dcc-zk-proof` | 90% — Mainnet, QA needed |
 | RWA Tokenization | `33imattei33/decentralchain-rwa` | In development |
 
 ### CR Coin Economy
 
 | Project | Repository | Live URL | Status |
 |---------|-----------|----------|--------|
-| CR Coin Website | `dylanpersonguy/cr-coin-website` | crcoin.net | Active |
-| CR Coin Quests | `dylanpersonguy/cr-coin-quests-app` | — | In development |
-| CR Coin Raffles | `dylanpersonguy/cr-coin-raffles-app` | — | In development |
-| CRC Marketplace | `dylanpersonguy/crc-marketplace-app` | — | In development |
-| CRC Casino 2.0 | `dylanpersonguy/crc-casino-2.0` | — | In development |
-| DCC Airdrop Bot | `dylanpersonguy/dcc-airdrop` | — | In development |
+| CR Coin Website | `dylanpersonguy/cr-coin-website` | crcoin.net | 90% — Mainnet, QA needed |
+| CR Coin Quests | `dylanpersonguy/cr-coin-quests-app` | — | 90% — Mainnet, QA needed |
+| CR Coin Raffles | `dylanpersonguy/cr-coin-raffles-app` | — | 90% — Mainnet, QA needed |
+| CRC Marketplace | `dylanpersonguy/crc-marketplace-app` | — | 90% — Mainnet, QA needed |
+| CRC Casino 2.0 | `dylanpersonguy/crc-casino-2.0` | — | 90% — Mainnet, QA needed |
+| DCC Airdrop Bot | `dylanpersonguy/dcc-airdrop` | — | 90% — Mainnet, QA needed |
 
 ### Web Properties
 
@@ -494,7 +509,7 @@ pie title Phase 5 Effort Distribution
 
 | Project | Repository | Status |
 |---------|-----------|--------|
-| Data Writer App | `dylanpersonguy/decentralchain-data-writer-app` | In development |
+| Data Writer App | `dylanpersonguy/decentralchain-data-writer-app` | 90% — Mainnet, QA needed |
 
 ---
 
@@ -517,6 +532,7 @@ pie title Phase 5 Effort Distribution
 
 | Version | Date | Changes |
 |---------|------|---------|
+| 1.1 | 2026-03-19 | Updated 12 projects to 90% complete (mainnet deployed, QA/debug phase). Restructured phases to reflect actual progress |
 | 1.0 | 2026-03-19 | Complete roadmap with real ecosystem data — SDK status, wallets, DeFi, CR Coin, cross-chain, web properties |
 | 0.1 | 2026-03-19 | Initial placeholder roadmap |
 
