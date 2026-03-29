@@ -14,6 +14,20 @@ See [ROADMAP.md](ROADMAP.md) for the full roadmap with:
 - **Delivery Tracker** — Per-phase status with targets
 - **Project Registry** — Every repo, URL, and status in the ecosystem
 
+## April 2026 Roadmap Highlights
+
+- DecentralChain Node Dashboard (Inside DEX) — April 1
+- Decentral Chain LP Pitchdeck for investors — April 5
+- DCC & CR Coin Investor Kit — April 4
+- DecentralChain & CR Coin Media Kit — April 3
+- DecentralChain & CR Coin Media launching — April 6
+- CR Stable Coin Kit / Introduction — April 5
+- DecentralChain & CR Coin Educational Kit — April 12
+- DecentralChain & CR Coin Educational Campaign Launching — April 16
+- CR Coin Distribution Planning — April 20
+- CR Coin Merchants ecosystem Mass Adoption Campaign — April 21
+- Registro en Sicop — April 28
+
 ## Ecosystem at a Glance
 
 | Category | Count | Examples |

@@ -155,12 +155,24 @@ gantt
     Wallet Beta Release                    :milestone, m4, 2026-06-20, 0d
 
     section Phase 5 — Ecosystem Growth
-    DecentralScan v2                       :e2, 2026-06-20, 45d
-    RWA Tokenization Platform              :e3, 2026-07-01, 60d
-    Docs Portal Relaunch                   :e4, 2026-06-20, 30d
-    Node Infrastructure Scaling            :e5, 2026-07-01, 35d
-    Partner & Exchange Integrations        :e6, 2026-07-15, 45d
-    Ecosystem v1.0 Complete                :milestone, m5, 2026-09-01, 0d
+    Decentral Chain LP Pitchdeck for investors :e1, 2026-04-05, 7d
+    DCC & CR Coin Investor Kit                 :e2, 2026-04-04, 7d
+    DecentralChain & CR Coin Media Kit         :e3, 2026-04-03, 5d
+    DecentralChain & CR Coin Media launching   :e4, 2026-04-06, 3d
+    CR Stable Coin Kit / Introduction          :e5, 2026-04-05, 5d
+    DecentralChain & CR Coin Educational Kit   :e6, 2026-04-12, 5d
+    DecentralChain & CR Coin Educational Campaign Launching :e7, 2026-04-16, 5d
+    CR Coin Merchants ecosystem Mass Adoption Campaign :e8, 2026-04-21, 7d
+    CR Coin Distribution Planning              :e9, 2026-04-20, 5d
+    Registro en Sicop                          :e10, 2026-04-28, 1d
+    DecentralChain Node Dashboard (Inside DEX) :e11, 2026-04-01, 7d
+    Decentral Exchange Production              :e12, 2026-06-15, 45d
+    DecentralScan v2                           :e13, 2026-06-15, 45d
+    RWA Tokenization Platform                  :e14, 2026-07-01, 60d
+    Docs Portal Relaunch                       :e15, 2026-06-15, 30d
+    Node Infrastructure Scaling                :e16, 2026-07-01, 35d
+    Partner & Exchange Integrations            :e17, 2026-07-15, 45d
+    Ecosystem v1.0 Complete                    :milestone, m5, 2026-09-01, 0d
 ```
 
 ---
