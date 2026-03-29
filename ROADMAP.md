@@ -37,9 +37,17 @@ timeline
                      : Airdrop Bot & Eligibility Tracker (Apr 5)
                      : Full Decentral.Exchange launch (Apr 5)
                      : DCC DeFi Ecosystem & Public Sale (Apr 10)
+                     : Node Dashboard inside DEX (Apr 1)
+                     : Media Kit (Apr 3), Investor Kit (Apr 4)
+                     : LP Pitchdeck (Apr 5), CR Stable Coin Kit (Apr 5)
+                     : Media Launching (Apr 6)
     section Phase 3 — CR Coin Economy
         Apr 2026     : CR Coin Website, Quests, Raffles — testing/debug (Apr 15)
                      : CRC Marketplace, Casino 2.0 — testing/debug (Apr 20)
+                     : Educational Kit (Apr 12), Educational Campaign (Apr 16)
+                     : CR Coin Distribution Planning (Apr 20)
+                     : Merchants Mass Adoption Campaign (Apr 21)
+                     : Register in Sicop (Apr 28)
     section Phase 4 — Wallets & QA
         Q2 2026 : DCW Mobile Wallets (Android + iOS)
                 : DCW Browser Extension
@@ -136,6 +144,12 @@ gantt
     Deploy Airdrop Bot & Eligibility Tracker :b6, 2026-04-01, 4d
     Full Decentral.Exchange Launch         :crit, b7, 2026-04-01, 4d
     DCC DeFi Ecosystem & Public Sale Launch :crit, b8, 2026-04-06, 4d
+    Node Dashboard (Inside DEX)            :b9, 2026-03-28, 4d
+    DCC & CR Coin Media Kit                :b10, 2026-03-30, 4d
+    DCC & CR Coin Investor Kit             :b11, 2026-03-31, 4d
+    LP Pitchdeck for Investors             :b12, 2026-04-01, 4d
+    CR Stable Coin Kit / Introduction      :b13, 2026-04-01, 4d
+    DCC & CR Coin Media Launching          :b14, 2026-04-02, 4d
     DeFi Phase Complete                    :milestone, m2, 2026-04-10, 0d
 
     section Phase 3 — CR Coin Economy
@@ -144,7 +158,12 @@ gantt
     CR Coin Raffles — Testing & Debug      :active, c3, 2026-03-21, 25d
     CRC Marketplace — Testing & Debug      :c4, 2026-04-01, 19d
     CRC Casino 2.0 — Testing & Debug       :c5, 2026-04-01, 19d
-    CR Coin QA Complete                    :milestone, m3, 2026-04-20, 0d
+    DCC & CR Coin Educational Kit          :c6, 2026-04-06, 6d
+    DCC & CR Coin Educational Campaign     :c7, 2026-04-10, 6d
+    CR Coin Distribution Planning          :c8, 2026-04-14, 6d
+    CR Coin Merchants Mass Adoption Campaign :c9, 2026-04-15, 6d
+    Register in Sicop                      :c10, 2026-04-22, 6d
+    CR Coin QA Complete                    :milestone, m3, 2026-04-28, 0d
 
     section Phase 4 — Wallets & Security
     DCW Android Development                :d1, 2026-04-20, 60d
@@ -201,6 +220,12 @@ gantt
     Airdrop Bot & Tracker — Apr 5      :df6, 2026-04-01, 4d
     Decentral.Exchange Launch — Apr 5  :crit, df7, 2026-04-01, 4d
     DeFi Ecosystem & Public Sale — Apr 10 :crit, df8, 2026-04-06, 4d
+    Node Dashboard (Inside DEX) — Apr 1    :df9, 2026-03-28, 4d
+    Media Kit — Apr 3                      :df10, 2026-03-30, 4d
+    Investor Kit — Apr 4                   :df11, 2026-03-31, 4d
+    LP Pitchdeck — Apr 5                   :df12, 2026-04-01, 4d
+    CR Stable Coin Kit — Apr 5             :df13, 2026-04-01, 4d
+    Media Launching — Apr 6                :df14, 2026-04-02, 4d
 
     section CR Coin (Deadlines)
     CR Coin Website QA — Apr 15        :active, cr1, 2026-03-21, 25d
@@ -208,6 +233,11 @@ gantt
     Raffles App QA — Apr 15            :active, cr3, 2026-03-21, 25d
     Marketplace QA — Apr 20            :cr4, 2026-04-01, 19d
     Casino 2.0 QA — Apr 20             :cr5, 2026-04-01, 19d
+    Educational Kit — Apr 12            :cr6, 2026-04-06, 6d
+    Educational Campaign — Apr 16       :cr7, 2026-04-10, 6d
+    CR Coin Distribution Planning — Apr 20 :cr8, 2026-04-14, 6d
+    Merchants Mass Adoption — Apr 21    :cr9, 2026-04-15, 6d
+    Register in Sicop — Apr 28          :cr10, 2026-04-22, 6d
 
     section Mobile & Extension
     DCW Android                  :w1, 2026-04-20, 60d
@@ -251,6 +281,16 @@ flowchart LR
     B --> O["CR Coin Website, Quests, Raffles<br/>🟡 Apr 15"]
     B --> P["CRC Marketplace, Casino 2.0<br/>🟡 Apr 20"]
 
+    B --> S["Node Dashboard<br/>📅 Apr 1"]
+    S --> M
+    B --> T["Media Kit 📅 Apr 3<br/>Investor Kit 📅 Apr 4<br/>LP Pitchdeck 📅 Apr 5"]
+    B --> U["CR Stable Coin Kit<br/>📅 Apr 5"]
+    T --> V["Media Launching<br/>📅 Apr 6"]
+    B --> W["Educational Kit 📅 Apr 12<br/>Educational Campaign 📅 Apr 16"]
+    P --> X["CR Coin Distribution Planning<br/>📅 Apr 20"]
+    X --> Y["Merchants Mass Adoption<br/>📅 Apr 21"]
+    Y --> Z["Register in Sicop<br/>📅 Apr 28"]
+
     N --> Q["Security Audit<br/>(DeFi + CR Coin)"]
     O --> Q
     P --> Q
@@ -290,8 +330,8 @@ quadrantChart
 |-------|--------|--------|-----------------|
 | **Phase 1** — SDK & Monorepo | 🟢 Complete | Mar 2026 | 22 SDK libs migrated, monorepo consolidated, 3,747 tests, 0 vulns |
 | **Phase 1b** — Critical Fixes | 🔴 Blocked | Apr 2026 | Cognito P0 resolution |
-| **Phase 2** — DeFi & Apps | 🟡 In Progress | Mar 25 – Apr 10 | Sol Gateway, AMM Swap, Liq Locker, Token Distro, Liquid Staking, DecentralChain.io, Airdrop Bot, Decentral.Exchange Launch, DCC Public Sale |
-| **Phase 3** — CR Coin Economy | 🟡 In Progress | Apr 15 – Apr 20 | CR Coin Website, Quests, Raffles, CRC Marketplace, Casino 2.0 |
+| **Phase 2** — DeFi & Apps | 🟡 In Progress | Mar 25 – Apr 10 | Sol Gateway, AMM Swap, Liq Locker, Token Distro, Liquid Staking, DecentralChain.io, Airdrop Bot, Decentral.Exchange Launch, DCC Public Sale, Node Dashboard, Media Kit, Investor Kit, LP Pitchdeck, CR Stable Coin Kit, Media Launching |
+| **Phase 3** — CR Coin Economy | 🟡 In Progress | Apr 12 – Apr 28 | CR Coin Website, Quests, Raffles, CRC Marketplace, Casino 2.0, Educational Kit, Educational Campaign, CR Coin Distribution Planning, Merchants Mass Adoption Campaign, Register in Sicop |
 | **Phase 4** — Wallets & Security | ⚪ Not Started | Q2 2026 | DCW Android/iOS/Extension, security audit on all DeFi + CR Coin apps |
 | **Phase 5** — Ecosystem Growth | ⚪ Not Started | Q3 2026 | DecentralScan v2, RWA, docs relaunch, partner integrations |
 
@@ -354,6 +394,12 @@ pie title Phase 2 Effort Distribution
 | 7 | **Deploy Airdrop Bot and Eligibility Tracker** | 📅 Scheduled | **Apr 5** |
 | 8 | **Fully Launched NEW Decentral.Exchange** — all new features: Liq Lock, Gateway, Swap, Liq Staking, etc. | 📅 Scheduled | **Apr 5** |
 | 9 | **Full Launch of DCC DeFi Ecosystem & DCC Public Sale** | 📅 Scheduled | **Apr 10** |
+| 10 | **DecentralChain Node Dashboard** — inside DEX | 📅 Scheduled | **Apr 1** |
+| 11 | **DecentralChain & CR Coin Media Kit** | 📅 Scheduled | **Apr 3** |
+| 12 | **DCC & CR Coin Investor Kit** | 📅 Scheduled | **Apr 4** |
+| 13 | **Decentral Chain LP Pitchdeck for Investors** | 📅 Scheduled | **Apr 5** |
+| 14 | **CR Stable Coin Kit / Introduction** | 📅 Scheduled | **Apr 5** |
+| 15 | **DecentralChain & CR Coin Media Launching** | 📅 Scheduled | **Apr 6** |
 
 **Key Repositories:**
 
@@ -395,6 +441,11 @@ pie title Phase 3 Effort Distribution
 |---|-------------|--------|----------|
 | 1 | **CR Coin Website, Quests, Raffles** — testing/debug | 🟡 In Progress | **Apr 15** |
 | 2 | **CRC Marketplace, Casino 2.0** — testing/debug | 🟡 In Progress | **Apr 20** |
+| 3 | **DecentralChain & CR Coin Educational Kit** | 📅 Scheduled | **Apr 12** |
+| 4 | **DecentralChain & CR Coin Educational Campaign Launching** | 📅 Scheduled | **Apr 16** |
+| 5 | **CR Coin Distribution Planning** | 📅 Scheduled | **Apr 20** |
+| 6 | **CR Coin Merchants Ecosystem Mass Adoption Campaign** | 📅 Scheduled | **Apr 21** |
+| 7 | **Register in Sicop** | 📅 Scheduled | **Apr 28** |
 
 **Key Repositories:**
 
@@ -551,6 +602,7 @@ pie title Phase 5 Effort Distribution
 
 | Version | Date | Changes |
 |---------|------|---------|
+| 3.0 | 2026-03-28 | Added 11 new deliverables: Node Dashboard (Apr 1), Media Kit (Apr 3), Investor Kit (Apr 4), LP Pitchdeck (Apr 5), CR Stable Coin Kit (Apr 5), Media Launching (Apr 6), Educational Kit (Apr 12), Educational Campaign (Apr 16), CR Coin Distribution Planning (Apr 20), Merchants Mass Adoption (Apr 21), Register in Sicop (Apr 28) |
 | 2.0 | 2026-03-21 | Roadmap restructured: Phase 2 rewritten with hard deadlines (Mar 25 – Apr 10), Phase 3 deadlines added (Apr 15 – Apr 20), cleaned up branding |
 | 1.1 | 2026-03-19 | Updated 12 projects to 90% complete (mainnet deployed, QA/debug phase). Restructured phases to reflect actual progress |
 | 1.0 | 2026-03-19 | Complete roadmap with real ecosystem data — SDK status, wallets, DeFi, CR Coin, cross-chain, web properties |
@@ -558,4 +610,4 @@ pie title Phase 5 Effort Distribution
 
 ---
 
-*Last updated: March 21, 2026*
+*Last updated: March 28, 2026*
